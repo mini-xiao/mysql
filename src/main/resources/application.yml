@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    #url: jdbc:mysql://${JDBC.HOST:192.168.0.6}:${JDBC.PORT:3306}/${JDBC.DATABASE.SIM:trade_simmanage}?useUnicode=true&serverTimezone=CTT&zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowMultiQueries=true
+    url: jdbc:mysql://rm-wz9gz4od73w5ocz0zoo.mysql.rds.aliyuncs.com:3306/trade_simmanage?useUnicode=true&serverTimezone=CTT&zeroDateTimeBehavior=convertToNull&characterEncoding=utf8&characterSetResults=utf8&useSSL=false&verifyServerCertificate=false&autoReconnct=true&autoReconnectForPools=true&allowMultiQueries=true
+    username: root
+    password: XXTX@2019
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis:
+  mapper-locations: classpath:com/example/**/mapper/*.xml
+
+mybatis-plus:
+  mapper-locations: classpath:com/example/**/mapper/*.xml
